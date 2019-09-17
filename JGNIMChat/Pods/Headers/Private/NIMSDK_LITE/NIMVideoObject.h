@@ -1,0 +1,1 @@
+../../../NIMSDK_LITE/NIMSDK/ExportHeaders/MessageObject/NIMVideoObject.h

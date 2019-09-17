@@ -1,0 +1,1 @@
+../../../NIMKit/NIMKit/NIMKit/Sections/Session/Object/NIMSessionInteractorImpl.h

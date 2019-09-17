@@ -1,0 +1,6 @@
+platform :ios, "8.0"
+target "JGChat" do
+pod 'NIMKit/Lite',"1.0.6"
+pod 'SDWebImage'
+pod 'Masonry'
+end

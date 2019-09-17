@@ -1,0 +1,53 @@
+PODS:
+  - CTAssetsPickerController (3.3.2-alpha):
+    - PureLayout (~> 3.0.0)
+  - M80AttributedLabel (1.5.0)
+  - Masonry (1.0.2)
+  - NIMKit/Core (1.0.6):
+    - CTAssetsPickerController (~> 3.3.2-alpha)
+    - M80AttributedLabel (~> 1.5.0)
+    - SDWebImage (~> 3.8.2)
+    - SVProgressHUD (~> 2.0.3)
+    - Toast (~> 3.0)
+  - NIMKit/Lite (1.0.6):
+    - NIMKit/Core
+    - NIMSDK_LITE (~> 3.2.5)
+  - NIMSDK_LITE (3.2.5)
+  - PureLayout (3.0.2)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SVProgressHUD (2.0.4)
+  - Toast (3.1.0)
+
+DEPENDENCIES:
+  - Masonry
+  - NIMKit/Lite (= 1.0.6)
+  - SDWebImage
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CTAssetsPickerController
+    - M80AttributedLabel
+    - Masonry
+    - NIMKit
+    - NIMSDK_LITE
+    - PureLayout
+    - SDWebImage
+    - SVProgressHUD
+    - Toast
+
+SPEC CHECKSUMS:
+  CTAssetsPickerController: ef06977de8e0b6d6ff11a324d357a12335a61243
+  M80AttributedLabel: f2bf6608c3fa5475d3f753d4cc7e41dc2359c6c2
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  NIMKit: 40b633c6c138fe35ec8de37d4d8cb4b61449adf0
+  NIMSDK_LITE: 44ba13c31feb380fe907e83d60dfe118f08bd141
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SVProgressHUD: bfde85ed6c573ea802b9cb37894ed9b629034f1b
+  Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
+
+PODFILE CHECKSUM: b6d425d0d5ac7e041346a6c75c2c86ba7c171aae
+
+COCOAPODS: 1.5.3

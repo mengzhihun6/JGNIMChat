@@ -1,0 +1,1 @@
+../../../NIMKit/NIMKit/NIMKit/Protocols/NIMMessageCellProtocol.h

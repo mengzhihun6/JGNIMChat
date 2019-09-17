@@ -1,0 +1,72 @@
+//
+//  JGChat.pch
+//  JGChat
+//
+//  Created by JG on 2017/5/11.
+//  Copyright © 2017年 JG. All rights reserved.
+//
+
+#ifndef JGChat_pch
+#define JGChat_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <NIMSDK.h>
+#import <NIMKit.h>
+#import <SVProgressHUD.h>
+
+//这个宏加上后，可以去掉'mas_'这个前缀了
+#define MAS_SHORTHAND
+//这个宏加上后，可以去掉自动包装方法的'mas_'前缀
+#define MAS_SHORTHAND_GLOBALS
+//注意，这两个宏必须定义在这个头文件的上面，因为"Masonry.h"中要用到上面2个宏，如果已经定义过了的话
+#import <Masonry.h>
+
+#import "UIImageView+WebCache.h"
+#import "UIView+ChangeSize.h"
+#import "UIImage+Image.h"
+#import "UILabel+HJGLableFit.h"
+#import "NSDictionary+NHJson.h"
+
+#define kMarginTopHeight 64
+
+#define CHATKEY @"a3f67f710d552db788a380cffdc92160"
+
+#define WIDTH [UIScreen mainScreen].bounds.size.width
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define AppThemeTraditionFont [UIFont systemFontOfSize:14]
+
+#define SuppressPerformSelectorLeakWarning(Stuff) \
+do { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
+Stuff; \
+_Pragma("clang diagnostic pop") \
+} while (0)
+
+
+
+
+#define dispatch_async_main_safe(block)\
+if ([NSThread isMainThread]) {\
+block();\
+} else {\
+dispatch_async(dispatch_get_main_queue(), block);\
+}
+
+//----------------------ABOUT PRINTING LOG 打印日志 ----------------------------
+//Using dlog to print while in debug model.        调试状态下打印日志
+#ifdef DEBUG
+#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#   define DRetainLog(obj)     DLog(@"retain count = %@",[obj valueForKey:@"retainCount"]);
+#else
+#   define DLog(...)
+#   define DRetainLog(obj)
+#endif
+//适配
+#define W(float) [UIView setWidth:(float)]
+#define H(float) [UIView setHeight:(float)]
+
+#endif /* JGChat_pch */

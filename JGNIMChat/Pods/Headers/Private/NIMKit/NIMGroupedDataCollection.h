@@ -1,0 +1,1 @@
+../../../NIMKit/NIMKit/NIMKit/Sections/Contact/ContactGroup/NIMGroupedDataCollection.h
